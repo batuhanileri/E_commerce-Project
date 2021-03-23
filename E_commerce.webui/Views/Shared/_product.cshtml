@@ -1,0 +1,11 @@
+@model E_commerce.webui.Model.product
+<div class="card" >
+                        <img class="card-img-top"
+                            src="~/images/@Model.ImageUrl">
+                        <div class="card-body">
+                            <h5 class="card-title">@Model.Name</h5>
+                            <p class="card-text">@Model.Description</p>
+                            <a href="/product/details/@Model.ProductId" class="btn btn-primary">İncele</a>
+                        </div>
+                    </div>
+                    
