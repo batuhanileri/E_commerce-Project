@@ -1,5 +1,5 @@
 {
-  "FilePath": "c:\\Users\\batu_\\E_commerce\\E_commerce.webui\\E_commerce.webui.csproj",
+  "FilePath": "c:\\Users\\batu_\\OneDrive\\Masaüstü\\Github\\e_commerce\\E_commerce.webui\\E_commerce.webui.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "3.0",
@@ -14409,73 +14409,73 @@
   "RootNamespace": "E_commerce.webui",
   "Documents": [
     {
-      "FilePath": "c:\\Users\\batu_\\E_commerce\\E_commerce.webui\\Views\\Shared\\_header.cshtml",
-      "TargetPath": "Views\\Shared\\_header.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\batu_\\E_commerce\\E_commerce.webui\\Views\\Product\\index.cshtml",
+      "FilePath": "c:\\Users\\batu_\\OneDrive\\Masaüstü\\Github\\e_commerce\\E_commerce.webui\\Views\\Product\\index.cshtml",
       "TargetPath": "Views\\Product\\index.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\batu_\\E_commerce\\E_commerce.webui\\Views\\Shared\\_navbar.cshtml",
+      "FilePath": "c:\\Users\\batu_\\OneDrive\\Masaüstü\\Github\\e_commerce\\E_commerce.webui\\Views\\Shared\\_header.cshtml",
+      "TargetPath": "Views\\Shared\\_header.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\batu_\\OneDrive\\Masaüstü\\Github\\e_commerce\\E_commerce.webui\\Views\\Shared\\_navbar.cshtml",
       "TargetPath": "Views\\Shared\\_navbar.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\batu_\\E_commerce\\E_commerce.webui\\Views\\_ViewImport.cshtml",
-      "TargetPath": "Views\\_ViewImport.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\batu_\\E_commerce\\E_commerce.webui\\Views\\Product\\list.cshtml",
-      "TargetPath": "Views\\Product\\list.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\batu_\\E_commerce\\E_commerce.webui\\Views\\Shared\\_noproduct.cshtml",
-      "TargetPath": "Views\\Shared\\_noproduct.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\batu_\\E_commerce\\E_commerce.webui\\Views\\Shared\\_categories.cshtml",
+      "FilePath": "c:\\Users\\batu_\\OneDrive\\Masaüstü\\Github\\e_commerce\\E_commerce.webui\\Views\\Shared\\_categories.cshtml",
       "TargetPath": "Views\\Shared\\_categories.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\batu_\\E_commerce\\E_commerce.webui\\Views\\Product\\details.cshtml",
-      "TargetPath": "Views\\Product\\details.cshtml",
+      "FilePath": "c:\\Users\\batu_\\OneDrive\\Masaüstü\\Github\\e_commerce\\E_commerce.webui\\Views\\Shared\\_noproduct.cshtml",
+      "TargetPath": "Views\\Shared\\_noproduct.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\batu_\\E_commerce\\E_commerce.webui\\Views\\Shared\\Components\\Categories\\Default.cshtml",
-      "TargetPath": "Views\\Shared\\Components\\Categories\\Default.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\batu_\\E_commerce\\E_commerce.webui\\Views\\Shared\\_product.cshtml",
+      "FilePath": "c:\\Users\\batu_\\OneDrive\\Masaüstü\\Github\\e_commerce\\E_commerce.webui\\Views\\Shared\\_product.cshtml",
       "TargetPath": "Views\\Shared\\_product.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\batu_\\E_commerce\\E_commerce.webui\\Views\\Home\\index.cshtml",
-      "TargetPath": "Views\\Home\\index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\batu_\\E_commerce\\E_commerce.webui\\Views\\Shared\\_Layout.cshtml",
+      "FilePath": "c:\\Users\\batu_\\OneDrive\\Masaüstü\\Github\\e_commerce\\E_commerce.webui\\Views\\Shared\\_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\batu_\\E_commerce\\E_commerce.webui\\Views\\Home\\about.cshtml",
+      "FilePath": "c:\\Users\\batu_\\OneDrive\\Masaüstü\\Github\\e_commerce\\E_commerce.webui\\Views\\Home\\about.cshtml",
       "TargetPath": "Views\\Home\\about.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\batu_\\E_commerce\\E_commerce.webui\\Views\\_ViewStart.cshtml",
+      "FilePath": "c:\\Users\\batu_\\OneDrive\\Masaüstü\\Github\\e_commerce\\E_commerce.webui\\Views\\_ViewImport.cshtml",
+      "TargetPath": "Views\\_ViewImport.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\batu_\\OneDrive\\Masaüstü\\Github\\e_commerce\\E_commerce.webui\\Views\\Product\\details.cshtml",
+      "TargetPath": "Views\\Product\\details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\batu_\\OneDrive\\Masaüstü\\Github\\e_commerce\\E_commerce.webui\\Views\\_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\batu_\\OneDrive\\Masaüstü\\Github\\e_commerce\\E_commerce.webui\\Views\\Home\\index.cshtml",
+      "TargetPath": "Views\\Home\\index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\batu_\\OneDrive\\Masaüstü\\Github\\e_commerce\\E_commerce.webui\\Views\\Shared\\Components\\Categories\\Default.cshtml",
+      "TargetPath": "Views\\Shared\\Components\\Categories\\Default.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\batu_\\OneDrive\\Masaüstü\\Github\\e_commerce\\E_commerce.webui\\Views\\Product\\list.cshtml",
+      "TargetPath": "Views\\Product\\list.cshtml",
       "FileKind": "mvc"
     }
   ],
