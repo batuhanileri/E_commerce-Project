@@ -10,7 +10,7 @@
             "request": "launch",
             "preLaunchTask": "build",
             // If you have changed target frameworks, make sure to update the program path.
-            "program": "${workspaceFolder}/E_commerce.webui/bin/Debug/netcoreapp3.1/E-commerce.webui.dll",
+            "program": "${workspaceFolder}/E_commerce.webui/bin/Debug/netcoreapp3.1/E_commerce.webui.dll",
             "args": [],
             "cwd": "${workspaceFolder}/E_commerce.webui",
             "stopAtEntry": false,

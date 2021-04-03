@@ -4,21 +4,20 @@ using E_commerce.webui.Model;
 
 namespace E_commerce.webui.Data
 {
-    public class CategoryRepository
+    public static class CategoryRepository
     {
-      private static List<category> _categories=null;
+      private static List<Category> _categories=null;
 
         static CategoryRepository()
         {
-            _categories = new List<category>
+            _categories = new List<Category>
             {
-                new category {CategoryId=1, Name = "Pantalon",Description="pantalon kategorisi"},
-                new category {CategoryId=1, Name = "Gömlek",Description="Gömlek kategorisi"},
-                new category {CategoryId=1, Name = "Elbise",Description="Elbise kategorisi"}
+                new Category {CategoryId=1, Name = "Pantalon",Description="pantalon kategorisi"},
+                new Category {CategoryId=2, Name = "Gömlek",Description="Gömlek kategorisi"},
+                new Category {CategoryId=3, Name = "Elbise",Description="Elbise kategorisi"}
             };
         }
-
-        public static List<category> Categories
+        public static List<Category> Categories
         {
             get
             {
@@ -26,12 +25,12 @@ namespace E_commerce.webui.Data
             }
         }
 
-        public static void AddCategory(category category)
+        public static void AddCategory(Category category)
         {
             _categories.Add(category);
         }
 
-        public static category GetCategorybyId(int id)
+        public static Category GetCategorybyId(int id)
         {
             return _categories.FirstOrDefault(c=>c.CategoryId==id);
         }

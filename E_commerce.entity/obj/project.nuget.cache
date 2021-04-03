@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "Hq/Ff4D09QefvA1JOhq0kUzvtPxhui+XpRenIeywMhCaCnKBrt+h68Cw65znOlD60H3FF2I0sEEnCnIC4g2IVg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\batu_\\E_commerce\\E_commerce.entity\\E_commerce.entity.csproj",
+  "expectedPackageFiles": [
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

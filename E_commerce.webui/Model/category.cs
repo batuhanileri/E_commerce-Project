@@ -1,5 +1,7 @@
-namespace E_commerce.webui.Model{
-public class category
+
+namespace E_commerce.webui.Model
+{
+public class Category
 {
     public int CategoryId { get; set; }
     public string Name{ get; set; }

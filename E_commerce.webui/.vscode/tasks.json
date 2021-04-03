@@ -7,7 +7,7 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/E_commerce.webui/E-commerce.webui.csproj",
+                "${workspaceFolder}/E_commerce.webui/E_commerce.webui.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -19,7 +19,7 @@
             "type": "process",
             "args": [
                 "publish",
-                "${workspaceFolder}/E_commerce.webui/E-commerce.webui.csproj",
+                "${workspaceFolder}/E_commerce.webui/E_commerce.webui.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -32,7 +32,7 @@
             "args": [
                 "watch",
                 "run",
-                "${workspaceFolder}/E_commerce.webui/E-commerce.webui.csproj",
+                "${workspaceFolder}/E_commerce.webui/E_commerce.webui.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],

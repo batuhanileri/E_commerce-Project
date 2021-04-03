@@ -29,7 +29,6 @@ C:\Users\batu_\E_commerce\E_commerce.webui\obj\Debug\netcoreapp3.1\Razor\Views\S
 C:\Users\batu_\E_commerce\E_commerce.webui\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_navbar.cshtml.g.cs
 C:\Users\batu_\E_commerce\E_commerce.webui\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_noproduct.cshtml.g.cs
 C:\Users\batu_\E_commerce\E_commerce.webui\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_product.cshtml.g.cs
-C:\Users\batu_\E_commerce\E_commerce.webui\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImport.cshtml.g.cs
 C:\Users\batu_\E_commerce\E_commerce.webui\obj\Debug\netcoreapp3.1\E_commerce.webui.RazorTargetAssemblyInfo.cache
 C:\Users\batu_\E_commerce\E_commerce.webui\obj\Debug\netcoreapp3.1\E_commerce.webui.RazorTargetAssemblyInfo.cs
 C:\Users\batu_\E_commerce\E_commerce.webui\obj\Debug\netcoreapp3.1\E_commerce.webui.Views.pdb
@@ -44,3 +43,7 @@ C:\Users\batu_\E_commerce\E_commerce.webui\obj\Debug\netcoreapp3.1\Razor\Views\S
 C:\Users\batu_\E_commerce\E_commerce.webui\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
 C:\Users\batu_\E_commerce\E_commerce.webui\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
 C:\Users\batu_\E_commerce\E_commerce.webui\bin\Debug\netcoreapp3.1\package-lock.json
+C:\Users\batu_\E_commerce\E_commerce.webui\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout2.cshtml.g.cs
+C:\Users\batu_\E_commerce\E_commerce.webui\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImport.cshtml.g.cs
+C:\Users\batu_\E_commerce\E_commerce.webui\obj\Debug\netcoreapp3.1\Razor\Views\Product\Create.cshtml.g.cs
+C:\Users\batu_\E_commerce\E_commerce.webui\obj\Debug\netcoreapp3.1\Razor\Views\Product\Edit.cshtml.g.cs

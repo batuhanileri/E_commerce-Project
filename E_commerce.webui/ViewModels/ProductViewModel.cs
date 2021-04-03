@@ -3,6 +3,6 @@ using E_commerce.webui.Model;
 
 public class ProductViewModel
 {
-    public List<product> ürün { get; set; }
-    public List<product> Products { get; internal set; }
+    public List<Product> ürün { get; set; }
+    public List<Product> Products { get; internal set; }
 }

@@ -8,9 +8,8 @@ namespace E_commerce.webui.ViewComponents
     public class CategoriesViewComponent:ViewComponent
     {
         public IViewComponentResult Invoke(){
-              
-             
-return View(CategoryRepository.Categories);
+               ViewBag.SelectedCategory = RouteData?.Values["id"];
+        return View(CategoryRepository.Categories);
         }
         
     }
