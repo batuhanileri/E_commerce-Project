@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
-using E_commerce.webui.Model;
+
 using System.Collections.Generic;
-using E_commerce.webui.Data;
+
 using System;
 using System.Linq;
 

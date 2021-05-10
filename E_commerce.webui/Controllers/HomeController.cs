@@ -1,6 +1,4 @@
-using System;
-using System.Collections.Generic;
-using E_commerce.webui.Data;
+using E_commerce.business.Abstract;
 using E_commerce.webui.Model;
 using Microsoft.AspNetCore.Mvc;
 
@@ -8,14 +6,20 @@ namespace E_commerce.webui.Controllers
 {
     public class HomeController : Controller
     {
-        public IActionResult Index()
-        {
+        private IProductService _productService;
         
-        var productViewModel = new ProductViewModel()
-            {
-                ürün = ProductRepository.Products
-            };
+        public HomeController(IProductService productService)
+        {
+            this._productService=productService;
+            
+        }
+        public IActionResult Index()
+        {    
 
+        var productViewModel = new ProductListViewModel()
+            {
+                Product = _productService.GetHomePageProducts()             
+            };
             return View(productViewModel);
         }
         //localhost:5000/home/about
@@ -23,7 +27,6 @@ namespace E_commerce.webui.Controllers
         {
             return View();
         }
-
         public IActionResult Details(){
             return View();
         }

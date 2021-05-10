@@ -1,13 +1,13 @@
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers 
-@model List<E_commerce.webui.Model.Category>
-
+@model List<E_commerce.entity.Category>
 <div class="list-group">
 
-    <a asp-controller="Product" asp-action="list" class="list-group-item list-group-item-action">Tüm Kategoriler</a>
-    @foreach (var category in Model)
-    {
-    <a asp-controller="Product" asp-action="list" asp-route-id="@category.CategoryId" class="list-group-item list-group-item-action @(ViewBag.SelectedCategory == category.CategoryId.ToString()? "active":"")">@category.Name</a>
+    <a href="/products" class="list-group-item list-group-item-action">Tüm Kategoriler</a>
    
-    }
+     @foreach (var item in Model)
+    {
+    <a asp-controller="Shop" asp-action="list" asp-route-category="@item.Url" class="list-group-item list-group-item-action @(ViewBag.SelectedCategory == item.Url? "active":"")">@item.Name</a>
+   
+    } 
 
 </div>

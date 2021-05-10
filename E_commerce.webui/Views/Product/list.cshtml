@@ -1,12 +1,12 @@
-@model ProductViewModel
+@model E_commerce.webui.Model.ProductListViewModel
 @{
-var popularclass =Model.ürün.Count>2?"popular":"";
-var products1=Model.ürün;
+var popularclass =Model.Product.Count>2?"popular":"";
+var products1=Model.Product;
 }
 @section Categories{
 @await Component.InvokeAsync("Categories")
 }
-@if(Model.ürün.Count==0)
+@if(Model.Product.Count==0)
 {
 @await Html.PartialAsync("_noproduct")
 }

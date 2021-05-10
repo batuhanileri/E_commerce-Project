@@ -1,4 +1,4 @@
-@model E_commerce.webui.Model.Product
+@model E_commerce.entity.Product
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers E_commerce.webui
 <form method="POST">
@@ -19,11 +19,11 @@
         <label for="ImageUrl">ImageUrl</label>
         <input asp-for="ImageUrl" value="@Model.ImageUrl" class="form-control">
     </div>
-    <div class="form-group">
+    @* <div class="form-group">
         <label for="CategoryId">CategoryId</label>
         <select asp-for="CategoryId" asp-items="@ViewBag.Categories" class="form-control">
               <option selected disabled>Seçiniz</option>
         </select>
-    </div>
+    </div> *@
     <button type="submit" class="btn btn-primary">Submit</button>
 </form>

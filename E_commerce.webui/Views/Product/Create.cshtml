@@ -1,4 +1,4 @@
-@model E_commerce.webui.Model.Product
+@model E_commerce.entity.Product
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 <form method="POST">
     <div asp-validation-summary="All" class="text-danger"></div>
@@ -22,13 +22,13 @@
         <input asp-for="ImageUrl"  value="@Model.ImageUrl" class="form-control">
      <span asp-validation-for="ImageUrl" class="text-danger">Resim alanı zorunludur.</span>
     </div>
-    <div class="form-group">
+    @* <div class="form-group">
         <label for="CategoryId">CategoryId</label>
         
         <select asp-for="CategoryId" asp-items="@ViewBag.Categories" class="form-control">
               <option selected disabled>Seçiniz</option>
         </select>
         <span asp-validation-for="CategoryId" class="text-danger">Kategori ID alanı zorunludur.</span>
-    </div>
+    </div> *@
     <button type="submit" class="btn btn-primary">Submit</button>
 </form>

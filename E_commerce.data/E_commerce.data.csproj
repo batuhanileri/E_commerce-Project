@@ -1,9 +1,0 @@
-<Project Sdk="Microsoft.NET.Sdk">
-
-  <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
-  </PropertyGroup>
-<<ItemGroup>
-<<ProjectReference Include ="..\E_commerce.entity\E_commerce.entity.csproj"/>
-</ItemGroup>
-</Project>

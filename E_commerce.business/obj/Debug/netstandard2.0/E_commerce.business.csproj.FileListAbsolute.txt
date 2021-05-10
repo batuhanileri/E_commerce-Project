@@ -1,0 +1,14 @@
+C:\Program Files\E_commerce\E_commerce.business\obj\Debug\netstandard2.0\E_commerce.business.csprojAssemblyReference.cache
+C:\Program Files\E_commerce\E_commerce.business\obj\Debug\netstandard2.0\E_commerce.business.AssemblyInfoInputs.cache
+C:\Program Files\E_commerce\E_commerce.business\obj\Debug\netstandard2.0\E_commerce.business.AssemblyInfo.cs
+C:\Program Files\E_commerce\E_commerce.business\obj\Debug\netstandard2.0\E_commerce.business.csproj.CoreCompileInputs.cache
+C:\Program Files\E_commerce\E_commerce.business\bin\Debug\netstandard2.0\E_commerce.business.deps.json
+C:\Program Files\E_commerce\E_commerce.business\bin\Debug\netstandard2.0\E_commerce.business.dll
+C:\Program Files\E_commerce\E_commerce.business\bin\Debug\netstandard2.0\E_commerce.business.pdb
+C:\Program Files\E_commerce\E_commerce.business\bin\Debug\netstandard2.0\E_commerce.dataa.dll
+C:\Program Files\E_commerce\E_commerce.business\bin\Debug\netstandard2.0\E_commerce.entity.dll
+C:\Program Files\E_commerce\E_commerce.business\bin\Debug\netstandard2.0\E_commerce.entity.pdb
+C:\Program Files\E_commerce\E_commerce.business\bin\Debug\netstandard2.0\E_commerce.dataa.pdb
+C:\Program Files\E_commerce\E_commerce.business\obj\Debug\netstandard2.0\E_commerce.business.csproj.CopyComplete
+C:\Program Files\E_commerce\E_commerce.business\obj\Debug\netstandard2.0\E_commerce.business.dll
+C:\Program Files\E_commerce\E_commerce.business\obj\Debug\netstandard2.0\E_commerce.business.pdb

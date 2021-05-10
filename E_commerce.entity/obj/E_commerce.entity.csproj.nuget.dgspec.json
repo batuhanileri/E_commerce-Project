@@ -1,23 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\batu_\\E_commerce\\E_commerce.entity\\E_commerce.entity.csproj": {}
+    "C:\\Program Files\\E_commerce\\E_commerce.entity\\E_commerce.entity.csproj": {}
   },
   "projects": {
-    "C:\\Users\\batu_\\E_commerce\\E_commerce.entity\\E_commerce.entity.csproj": {
+    "C:\\Program Files\\E_commerce\\E_commerce.entity\\E_commerce.entity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\batu_\\E_commerce\\E_commerce.entity\\E_commerce.entity.csproj",
+        "projectUniqueName": "C:\\Program Files\\E_commerce\\E_commerce.entity\\E_commerce.entity.csproj",
         "projectName": "E_commerce.entity",
-        "projectPath": "C:\\Users\\batu_\\E_commerce\\E_commerce.entity\\E_commerce.entity.csproj",
+        "projectPath": "C:\\Program Files\\E_commerce\\E_commerce.entity\\E_commerce.entity.csproj",
         "packagesPath": "C:\\Users\\batu_\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\batu_\\E_commerce\\E_commerce.entity\\obj\\",
+        "outputPath": "C:\\Program Files\\E_commerce\\E_commerce.entity\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
           "C:\\Users\\batu_\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

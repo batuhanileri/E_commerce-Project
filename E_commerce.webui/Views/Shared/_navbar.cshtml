@@ -1,19 +1,58 @@
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 <div class="navbar bg-primary navbar-dark navbar-expand-sm">
-        <div class="container">
-            <ul class="navbar-nav">
+        <div class="container-fluid">
+            <a href="/" class="navbar-brand">MAĞAZA</a>
+            <ul class="navbar-nav mr-auto">
+                  @if(User.Identity.IsAuthenticated)
+                {
                 <li class="nav-item">
-                    <a href="/product/list" class="nav-link">Products</a>
+                    <a href="/products" class="nav-link">Ürünler</a>
                 </li>
                 <li class="nav-item">
-                    <a href="/product/create" class="nav-link">Add Products</a>
+                    <a href="" class="nav-link">Sepet</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">link 3</a>
+                    <a href="" class="nav-link">Siparişler</a>
                 </li>
+                if(User.IsInRole("Admin"))
+                {
+                <li class="nav-item">
+                    <a href="/admin/categories" class="nav-link">Admin Kategori Paneli</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/admin/products" class="nav-link">Admin Ürün Paneli</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/admin/role/list" class="nav-link">Admin Rol Paneli</a>
+                </li> 
+                <li class="nav-item">
+                    <a href="/admin/user/list" class="nav-link">Admin Kullanıcılar Paneli</a>
+                </li> 
+                }
+                }
             </ul>
-            <form action="/product/list" class="form-inline">
-                <input name="q" type="text" class="form-control mr-2" placeholder="Search">
-                <button type="submit" class="btn btn-outline-light mr-0">Search</button>
-            </form>
+           
+            <ul class="navbar-nav ml-auto">
+
+                @if(User.Identity.IsAuthenticated)
+                {
+                    <li class="nav-item">
+                    <a href="/account/manage" class="nav-link">@User.Identity.Name</a>
+                    </li>
+                <li class="nav-item">
+                    <a href="/account/logout" class="nav-link">Çıkış Yap</a>
+                </li>
+                }
+                else
+                {
+                <li class="nav-item">
+                    <a href="/account/login" class="nav-link">Giriş Yap</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/account/register" class="nav-link">Kayıt Ol</a>
+                </li>
+                }
+            </ul>
+            
         </div>
     </div>

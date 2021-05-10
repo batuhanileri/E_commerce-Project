@@ -1,18 +1,24 @@
-@model E_commerce.webui.Model.Product
+@model E_commerce.entity.Product
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
-<div class="card mb-2" >
-              <img class="card-img-top"
+
+<div class="card mb-2">
+             <img class="card-img-top" 
+                   style="width:240px; height:350px; overflow: hidden"
                    src="~/images/@Model.ImageUrl" alt="">
              <div class="card-body">
                     <h5 class="card-title">@Model.Name</h5>
-                    <p class="card-text">@Model.Description</p>
-     <a asp-controller="Product" asp-action="Details" asp-route-id="@Model.ProductId" class="btn btn-primary btn-sm">İncele</a>
-    <a asp-controller="Product" asp-action="Edit" asp-route-id="@Model.ProductId" class="btn btn-primary btn-sm">Edit</a>
+                    <bold class="text-danger" style="font-size:20px">
+                      @Model.Price   
+                    <i class="fas fa-lira-sign" style="font-size:20px"></i>
+                    </bold>   
+             </div>
+             <div>
+                  <div class="card-footer text-center">
+           <a asp-controller="shop" asp-action="Details" asp-route-url="@Model.Url" class="btn btn-primary btn-sm">Detaylar</a>
+           <a asp-controller="shop" asp-action="Sepet" asp-route-id="@Model.ProductId" class="btn btn-primary btn-sm">Sepete Ekle</a>
+    
                           
-                  <form method="POST" action="/product/Delete" style="display: inline;">
-                       <input type="hidden" name="ProductId" value="@Model.ProductId">
-                  <button type="submit" class="btn btn-danger btn-sm">Delete</button>
-                </form>
+               </div>   
                   </div>
 </div>
                     

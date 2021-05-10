@@ -1,23 +1,226 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\batu_\\E_commerce\\E_commerce.webui\\E_commerce.webui.csproj": {}
+    "C:\\Program Files\\E_commerce\\E_commerce.webui\\E_commerce.webui.csproj": {}
   },
   "projects": {
-    "C:\\Users\\batu_\\E_commerce\\E_commerce.webui\\E_commerce.webui.csproj": {
+    "C:\\Program Files\\E_commerce\\E_commerce.business\\E_commerce.business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\batu_\\E_commerce\\E_commerce.webui\\E_commerce.webui.csproj",
-        "projectName": "E_commerce.webui",
-        "projectPath": "C:\\Users\\batu_\\E_commerce\\E_commerce.webui\\E_commerce.webui.csproj",
+        "projectUniqueName": "C:\\Program Files\\E_commerce\\E_commerce.business\\E_commerce.business.csproj",
+        "projectName": "E_commerce.business",
+        "projectPath": "C:\\Program Files\\E_commerce\\E_commerce.business\\E_commerce.business.csproj",
         "packagesPath": "C:\\Users\\batu_\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\batu_\\E_commerce\\E_commerce.webui\\obj\\",
+        "outputPath": "C:\\Program Files\\E_commerce\\E_commerce.business\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
           "C:\\Users\\batu_\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {
+              "C:\\Program Files\\E_commerce\\E_commerce.dataa\\E_commerce.dataa.csproj": {
+                "projectPath": "C:\\Program Files\\E_commerce\\E_commerce.dataa\\E_commerce.dataa.csproj"
+              },
+              "C:\\Program Files\\E_commerce\\E_commerce.entity\\E_commerce.entity.csproj": {
+                "projectPath": "C:\\Program Files\\E_commerce\\E_commerce.entity\\E_commerce.entity.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Program Files\\E_commerce\\E_commerce.dataa\\E_commerce.dataa.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Program Files\\E_commerce\\E_commerce.dataa\\E_commerce.dataa.csproj",
+        "projectName": "E_commerce.dataa",
+        "projectPath": "C:\\Program Files\\E_commerce\\E_commerce.dataa\\E_commerce.dataa.csproj",
+        "packagesPath": "C:\\Users\\batu_\\.nuget\\packages\\",
+        "outputPath": "C:\\Program Files\\E_commerce\\E_commerce.dataa\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\batu_\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {
+              "C:\\Program Files\\E_commerce\\E_commerce.entity\\E_commerce.entity.csproj": {
+                "projectPath": "C:\\Program Files\\E_commerce\\E_commerce.entity\\E_commerce.entity.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[3.1.3, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Program Files\\E_commerce\\E_commerce.entity\\E_commerce.entity.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Program Files\\E_commerce\\E_commerce.entity\\E_commerce.entity.csproj",
+        "projectName": "E_commerce.entity",
+        "projectPath": "C:\\Program Files\\E_commerce\\E_commerce.entity\\E_commerce.entity.csproj",
+        "packagesPath": "C:\\Users\\batu_\\.nuget\\packages\\",
+        "outputPath": "C:\\Program Files\\E_commerce\\E_commerce.entity\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\batu_\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Program Files\\E_commerce\\E_commerce.webui\\E_commerce.webui.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Program Files\\E_commerce\\E_commerce.webui\\E_commerce.webui.csproj",
+        "projectName": "E_commerce.webui",
+        "projectPath": "C:\\Program Files\\E_commerce\\E_commerce.webui\\E_commerce.webui.csproj",
+        "packagesPath": "C:\\Users\\batu_\\.nuget\\packages\\",
+        "outputPath": "C:\\Program Files\\E_commerce\\E_commerce.webui\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\batu_\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -29,7 +232,17 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Program Files\\E_commerce\\E_commerce.business\\E_commerce.business.csproj": {
+                "projectPath": "C:\\Program Files\\E_commerce\\E_commerce.business\\E_commerce.business.csproj"
+              },
+              "C:\\Program Files\\E_commerce\\E_commerce.dataa\\E_commerce.dataa.csproj": {
+                "projectPath": "C:\\Program Files\\E_commerce\\E_commerce.dataa\\E_commerce.dataa.csproj"
+              },
+              "C:\\Program Files\\E_commerce\\E_commerce.entity\\E_commerce.entity.csproj": {
+                "projectPath": "C:\\Program Files\\E_commerce\\E_commerce.entity\\E_commerce.entity.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -40,6 +253,22 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.3, )"
+            },
+            "Microsoft.EntityFrameworkcore.Sqlite": {
+              "target": "Package",
+              "version": "[3.1.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

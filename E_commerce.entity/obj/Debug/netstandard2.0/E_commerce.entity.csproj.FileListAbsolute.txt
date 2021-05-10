@@ -1,0 +1,9 @@
+C:\Program Files\E_commerce\E_commerce.entity\bin\Debug\netstandard2.0\E_commerce.entity.deps.json
+C:\Program Files\E_commerce\E_commerce.entity\bin\Debug\netstandard2.0\E_commerce.entity.dll
+C:\Program Files\E_commerce\E_commerce.entity\bin\Debug\netstandard2.0\E_commerce.entity.pdb
+C:\Program Files\E_commerce\E_commerce.entity\obj\Debug\netstandard2.0\E_commerce.entity.csprojAssemblyReference.cache
+C:\Program Files\E_commerce\E_commerce.entity\obj\Debug\netstandard2.0\E_commerce.entity.AssemblyInfoInputs.cache
+C:\Program Files\E_commerce\E_commerce.entity\obj\Debug\netstandard2.0\E_commerce.entity.AssemblyInfo.cs
+C:\Program Files\E_commerce\E_commerce.entity\obj\Debug\netstandard2.0\E_commerce.entity.csproj.CoreCompileInputs.cache
+C:\Program Files\E_commerce\E_commerce.entity\obj\Debug\netstandard2.0\E_commerce.entity.dll
+C:\Program Files\E_commerce\E_commerce.entity\obj\Debug\netstandard2.0\E_commerce.entity.pdb
