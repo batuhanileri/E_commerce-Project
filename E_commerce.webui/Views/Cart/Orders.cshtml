@@ -1,0 +1,48 @@
+@model List<E_commerce.webui.Model.OrderListModel>
+
+<h1>Siparişler</h1>
+<hr>
+
+@foreach (var order in Model)
+{
+<table class="table table-bordered table-sm mb-3">
+    <thead class="bg-primary">
+        <tr>
+            <td colspan="2">Order Id: #@order.OrderNumber</td>
+            <th>Price</th>
+            <th>Quantity</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in order.OrderItems)
+        {
+            <tr>
+                <td><img src="~/images/@item.ImageUrl" alt="" width="50"></td>
+                <td>@item.Name</td>
+                <td>@item.Price</td>
+                <td>@item.Quantity</td>
+            </tr>
+        }
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="2">Customer Name</td>
+            <td>@order.FirstName @order.LastName</td>
+            <td rowspan="6">Total: @order.TotalPrice().ToString("c")</td>
+        </tr>
+        <tr>
+            <td colspan="2">Adress</td>
+            <td>@order.Address</td>
+        </tr>
+        <tr>
+            <td colspan="2">Email</td>
+            <td>@order.Email</td>
+        </tr>
+        <tr>
+            <td colspan="2">Phone</td>
+            <td>@order.Phone</td>
+        </tr>
+    </tfoot>
+</table>
+    
+}

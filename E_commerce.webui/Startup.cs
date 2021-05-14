@@ -66,8 +66,14 @@ namespace E_commerce.webui
             //mvc
             services.AddScoped<IProductRepository,EfCoreProductRepository>();
             services.AddScoped<ICategoryRepository,EfCoreCategoryRepository>();
+            services.AddScoped<ICartRepository,EfCoreCartRepository>();
+            services.AddScoped<IOrderRepository,EfCoreOrderRepository>();
+
+
             services.AddScoped<IProductService,ProductManager>();
             services.AddScoped<ICategoryService,CategoryManager>();
+            services.AddScoped<ICartService,CartManager>();
+            services.AddScoped<IOrderService,OrderManager>();
             services.AddControllersWithViews();
         }
 
@@ -96,6 +102,21 @@ namespace E_commerce.webui
             //localhost:5000/products
             app.UseEndpoints(endpoints =>
             {
+                   endpoints.MapControllerRoute(
+                   name: "orders",
+                   pattern:"orders",
+                   defaults: new {controller="Cart",action="GetOrders"}
+                   ); 
+                   endpoints.MapControllerRoute(
+                   name: "checkout",
+                   pattern:"checkout",
+                   defaults: new {controller="Cart",action="Checkout"}
+                   ); 
+                   endpoints.MapControllerRoute(
+                   name: "cart",
+                   pattern:"cart",
+                   defaults: new {controller="Cart",action="Index"}
+                   ); 
                    endpoints.MapControllerRoute(
                    name: "adminuseredit",
                    pattern:"admin/user/{id?}",

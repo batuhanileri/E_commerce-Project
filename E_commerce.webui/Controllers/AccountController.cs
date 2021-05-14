@@ -1,4 +1,5 @@
 using System.Threading.Tasks;
+using E_commerce.business.Abstract;
 using E_commerce.webui.Identity;
 using E_commerce.webui.Model;
 using Microsoft.AspNetCore.Identity;
@@ -10,11 +11,13 @@ namespace E_commerce.webui.Controllers
     {
         private UserManager<User> _userManager;
         private SignInManager<User> _signInManager;
+        private ICartService _cartService;
 
-        public AccountController(UserManager<User> userManager,SignInManager<User> signInManager)
+        public AccountController(UserManager<User> userManager,SignInManager<User> signInManager,ICartService cartService)
         {
             _userManager=userManager;
             _signInManager=signInManager;
+            _cartService=cartService;
         }
         public IActionResult Login(string ReturnUrl=null){
 
@@ -68,6 +71,7 @@ namespace E_commerce.webui.Controllers
             var result = await _userManager.CreateAsync(user,model.Password);
             if(result.Succeeded)
             {
+                _cartService.InitializeCart(user.Id);
                 return RedirectToAction("Login","Account");
             }          
             ModelState.AddModelError("","Bilinmeyen bir hata oluştu lütfen tekrar deneyiniz");

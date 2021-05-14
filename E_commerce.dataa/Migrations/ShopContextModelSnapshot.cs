@@ -16,6 +16,44 @@ namespace E_commerce.dataa.Migrations
             modelBuilder
                 .HasAnnotation("ProductVersion", "3.1.3");
 
+            modelBuilder.Entity("E_commerce.entity.Cart", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("UserId")
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Carts");
+                });
+
+            modelBuilder.Entity("E_commerce.entity.CartItem", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("CartId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("ProductId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("Quantity")
+                        .HasColumnType("INTEGER");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CartId");
+
+                    b.HasIndex("ProductId");
+
+                    b.ToTable("CartItems");
+                });
+
             modelBuilder.Entity("E_commerce.entity.Category", b =>
                 {
                     b.Property<int>("CategoryId")
@@ -31,6 +69,86 @@ namespace E_commerce.dataa.Migrations
                     b.HasKey("CategoryId");
 
                     b.ToTable("Categories");
+                });
+
+            modelBuilder.Entity("E_commerce.entity.Order", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Address")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("City")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("ConversationId")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Email")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("FirstName")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("LastName")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Note")
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime>("OrderDate")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("OrderNumber")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("OrderState")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("PaymentId")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("PaymentType")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Phone")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("UserId")
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Orders");
+                });
+
+            modelBuilder.Entity("E_commerce.entity.OrderItem", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("OrderId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<double>("Price")
+                        .HasColumnType("REAL");
+
+                    b.Property<int>("ProductId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("Quantity")
+                        .HasColumnType("INTEGER");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("OrderId");
+
+                    b.HasIndex("ProductId");
+
+                    b.ToTable("OrderItems");
                 });
 
             modelBuilder.Entity("E_commerce.entity.Product", b =>
@@ -78,6 +196,36 @@ namespace E_commerce.dataa.Migrations
                     b.HasIndex("ProductId");
 
                     b.ToTable("ProductCategory");
+                });
+
+            modelBuilder.Entity("E_commerce.entity.CartItem", b =>
+                {
+                    b.HasOne("E_commerce.entity.Cart", "Cart")
+                        .WithMany("CartItems")
+                        .HasForeignKey("CartId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("E_commerce.entity.Product", "Product")
+                        .WithMany()
+                        .HasForeignKey("ProductId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("E_commerce.entity.OrderItem", b =>
+                {
+                    b.HasOne("E_commerce.entity.Order", "Order")
+                        .WithMany("OrderItems")
+                        .HasForeignKey("OrderId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("E_commerce.entity.Product", "Product")
+                        .WithMany()
+                        .HasForeignKey("ProductId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("E_commerce.entity.ProductCategory", b =>

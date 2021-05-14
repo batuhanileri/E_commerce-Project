@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "h3Wt4+OGK1BJF+il5nGzNh4DuLFv9ttuAD5hIaD+mM81P7ZmEzgMBbFKfqFEpee3oRUonHK/8O3P5QjhsxWkSg==",
+  "dgSpecHash": "+1casu5Y+9vUEzrsPqLjQbs3JRaQkeTkxXJQD7wAdGkIjSUbbCKhQXEjCY+DJmzV9v0TJKs7yH4hDqYrRwOmWA==",
   "success": true,
   "projectFilePath": "C:\\Program Files\\E_commerce\\E_commerce.webui\\E_commerce.webui.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\batu_\\.nuget\\packages\\iyzipay\\2.1.37\\iyzipay.2.1.37.nupkg.sha512",
     "C:\\Users\\batu_\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\3.1.3\\microsoft.aspnetcore.cryptography.internal.3.1.3.nupkg.sha512",
     "C:\\Users\\batu_\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\3.1.3\\microsoft.aspnetcore.cryptography.keyderivation.3.1.3.nupkg.sha512",
     "C:\\Users\\batu_\\.nuget\\packages\\microsoft.aspnetcore.identity.entityframeworkcore\\3.1.3\\microsoft.aspnetcore.identity.entityframeworkcore.3.1.3.nupkg.sha512",
@@ -33,6 +34,7 @@
     "C:\\Users\\batu_\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\3.1.3\\microsoft.extensions.logging.abstractions.3.1.3.nupkg.sha512",
     "C:\\Users\\batu_\\.nuget\\packages\\microsoft.extensions.options\\3.1.3\\microsoft.extensions.options.3.1.3.nupkg.sha512",
     "C:\\Users\\batu_\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.3\\microsoft.extensions.primitives.3.1.3.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\newtonsoft.json\\11.0.2\\newtonsoft.json.11.0.2.nupkg.sha512",
     "C:\\Users\\batu_\\.nuget\\packages\\sqlitepclraw.bundle_e_sqlite3\\2.0.2\\sqlitepclraw.bundle_e_sqlite3.2.0.2.nupkg.sha512",
     "C:\\Users\\batu_\\.nuget\\packages\\sqlitepclraw.core\\2.0.2\\sqlitepclraw.core.2.0.2.nupkg.sha512",
     "C:\\Users\\batu_\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3\\2.0.2\\sqlitepclraw.lib.e_sqlite3.2.0.2.nupkg.sha512",

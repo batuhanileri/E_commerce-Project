@@ -60,7 +60,6 @@ C:\Program Files\E_commerce\E_commerce.webui\bin\Debug\netcoreapp3.1\appsettings
 C:\Program Files\E_commerce\E_commerce.webui\bin\Debug\netcoreapp3.1\appsettings.json
 C:\Program Files\E_commerce\E_commerce.webui\bin\Debug\netcoreapp3.1\global.json
 C:\Program Files\E_commerce\E_commerce.webui\bin\Debug\netcoreapp3.1\package-lock.json
-C:\Program Files\E_commerce\E_commerce.webui\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
 C:\Program Files\E_commerce\E_commerce.webui\bin\Debug\netcoreapp3.1\E_commerce.webui.exe
 C:\Program Files\E_commerce\E_commerce.webui\bin\Debug\netcoreapp3.1\E_commerce.webui.deps.json
 C:\Program Files\E_commerce\E_commerce.webui\bin\Debug\netcoreapp3.1\E_commerce.webui.runtimeconfig.json
@@ -162,3 +161,10 @@ C:\Program Files\E_commerce\E_commerce.webui\obj\Debug\netcoreapp3.1\Razor\Views
 C:\Program Files\E_commerce\E_commerce.webui\obj\Debug\netcoreapp3.1\Razor\Views\Account\AccesDenied.cshtml.g.cs
 C:\Program Files\E_commerce\E_commerce.webui\obj\Debug\netcoreapp3.1\Razor\Views\Admin\UserList.cshtml.g.cs
 C:\Program Files\E_commerce\E_commerce.webui\obj\Debug\netcoreapp3.1\Razor\Views\Admin\UserEdit.cshtml.g.cs
+C:\Program Files\E_commerce\E_commerce.webui\obj\Debug\netcoreapp3.1\Razor\Views\Cart\Index.cshtml.g.cs
+C:\Program Files\E_commerce\E_commerce.webui\obj\Debug\netcoreapp3.1\Razor\Views\Cart\Checkout.cshtml.g.cs
+C:\Program Files\E_commerce\E_commerce.webui\bin\Debug\netcoreapp3.1\Iyzipay.dll
+C:\Program Files\E_commerce\E_commerce.webui\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Program Files\E_commerce\E_commerce.webui\obj\Debug\netcoreapp3.1\Razor\Views\Cart\Success.cshtml.g.cs
+C:\Program Files\E_commerce\E_commerce.webui\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\Program Files\E_commerce\E_commerce.webui\obj\Debug\netcoreapp3.1\Razor\Views\Cart\Orders.cshtml.g.cs

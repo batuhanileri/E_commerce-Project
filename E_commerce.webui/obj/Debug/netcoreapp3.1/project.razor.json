@@ -14464,6 +14464,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Program Files\\E_commerce\\E_commerce.webui\\Views\\Cart\\Orders.cshtml",
+      "TargetPath": "Views\\Cart\\Orders.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Program Files\\E_commerce\\E_commerce.webui\\Views\\Shared\\_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
@@ -14489,6 +14494,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Program Files\\E_commerce\\E_commerce.webui\\Views\\Cart\\Index.cshtml",
+      "TargetPath": "Views\\Cart\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Program Files\\E_commerce\\E_commerce.webui\\Views\\_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
       "FileKind": "mvc"
@@ -14501,6 +14511,16 @@
     {
       "FilePath": "c:\\Program Files\\E_commerce\\E_commerce.webui\\Views\\Shared\\_header.cshtml",
       "TargetPath": "Views\\Shared\\_header.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Program Files\\E_commerce\\E_commerce.webui\\Views\\Cart\\Success.cshtml",
+      "TargetPath": "Views\\Cart\\Success.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Program Files\\E_commerce\\E_commerce.webui\\Views\\Cart\\Checkout.cshtml",
+      "TargetPath": "Views\\Cart\\Checkout.cshtml",
       "FileKind": "mvc"
     },
     {

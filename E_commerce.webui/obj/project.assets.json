@@ -2,6 +2,18 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v3.1": {
+      "Iyzipay/2.1.37": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "11.0.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/Iyzipay.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Iyzipay.dll": {}
+        }
+      },
       "Microsoft.AspNetCore.Cryptography.Internal/3.1.3": {
         "type": "package",
         "compile": {
@@ -349,6 +361,15 @@
           "lib/netcoreapp3.1/Microsoft.Extensions.Primitives.dll": {}
         }
       },
+      "Newtonsoft.Json/11.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      },
       "SQLitePCLRaw.bundle_e_sqlite3/2.0.2": {
         "type": "package",
         "dependencies": {
@@ -534,6 +555,20 @@
     }
   },
   "libraries": {
+    "Iyzipay/2.1.37": {
+      "sha512": "GFY4GJcNr+gn6Re8ZMSmCD3PGqo9qeqa0KMhpToDvL84wCIog4oKrhUC4lTzdeOs6u9YukxiGlk62O7r8eO9jA==",
+      "type": "package",
+      "path": "iyzipay/2.1.37",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "iyzipay.2.1.37.nupkg.sha512",
+        "iyzipay.nuspec",
+        "lib/net45/Iyzipay.dll",
+        "lib/netstandard1.3/Iyzipay.dll",
+        "lib/netstandard2.0/Iyzipay.dll"
+      ]
+    },
     "Microsoft.AspNetCore.Cryptography.Internal/3.1.3": {
       "sha512": "DIF+4a32iHJIri2T2bnGXzjMramSs6rxijIAInYpdLoBqKNUHkUnOkklRVFae20pnuFi7l8VwEe/gPNt+xq7EQ==",
       "type": "package",
@@ -1067,6 +1102,36 @@
         "microsoft.extensions.primitives.nuspec"
       ]
     },
+    "Newtonsoft.Json/11.0.2": {
+      "sha512": "IvJe1pj7JHEsP8B8J8DwlMEx8UInrs/x+9oVY+oCD13jpLu4JbJU2WCIsMRn5C4yW9+DgkaO8uiVE5VHKjpmdQ==",
+      "type": "package",
+      "path": "newtonsoft.json/11.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.xml",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.xml",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml",
+        "newtonsoft.json.11.0.2.nupkg.sha512",
+        "newtonsoft.json.nuspec"
+      ]
+    },
     "SQLitePCLRaw.bundle_e_sqlite3/2.0.2": {
       "sha512": "OVPI/nh5AqfLCIKhAYqjCa6AHhc7oKApGcGM3UhMRSerFiBx58nSpGwxVFdMgjOCWZR+fA49nzsnKlWp5hFo8w==",
       "type": "package",
@@ -1340,6 +1405,7 @@
       "E_commerce.business >= 1.0.0",
       "E_commerce.dataa >= 1.0.0",
       "E_commerce.entity >= 1.0.0",
+      "Iyzipay >= 2.1.37",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 3.1.3",
       "Microsoft.EntityFrameworkCore.Design >= 3.1.3",
       "Microsoft.EntityFrameworkcore.Sqlite >= 3.1.3"
@@ -1399,6 +1465,10 @@
     "frameworks": {
       "netcoreapp3.1": {
         "dependencies": {
+          "Iyzipay": {
+            "target": "Package",
+            "version": "[2.1.37, )"
+          },
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
             "target": "Package",
             "version": "[3.1.3, )"

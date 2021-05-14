@@ -13,12 +13,20 @@
                      <a asp-controller="Shop" asp-action="List" asp-route-category="@item.Url" class="btn btn-link p-0 mb-3">@item.Name</a>
                 }
 
-               
-               
                     <div class="mb-3">
                         <h4 class="text-primary mb-3"><i class="fas fa-lira-sign"></i>@Model.Product.Price</h4>
-                     
-                    <button type="submit" class="btn btn-primary btn-lg">Sepete Ekle</button>           
+                
+                  <form asp-controller="Cart" asp-action="AddToCart" method="POST" class="form-inline">
+                         <input type="hidden" name="productId" value="@Model.Product.ProductId">
+                          <div class="input-group mb-3">
+                         <input type="number" name="quantity" value="1" min="1" step="1" style="width:100px;">
+                           <div class="input-group-append">
+                               <button type="submit" class="btn btn-primary">
+                               <i class="fas fa-cart-plus"></i>Sepete Ekle
+                               </button>
+                           </div>
+                          </div>                    
+                  </form>
             </div>
         </div>
 

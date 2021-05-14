@@ -27,6 +27,7 @@
           "E_commerce.business": "1.0.0",
           "E_commerce.dataa": "1.0.0",
           "E_commerce.entity": "1.0.0",
+          "Iyzipay": "2.1.37",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "3.1.3",
           "Microsoft.EntityFrameworkCore.Design": "3.1.3",
           "Microsoft.EntityFrameworkCore.Sqlite": "3.1.3",
@@ -302,6 +303,20 @@
         },
         "compile": {
           "E_commerce.webui.dll": {}
+        }
+      },
+      "Iyzipay/2.1.37": {
+        "dependencies": {
+          "Newtonsoft.Json": "11.0.2"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Iyzipay.dll": {
+            "assemblyVersion": "2.1.37.0",
+            "fileVersion": "2.1.37.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Iyzipay.dll": {}
         }
       },
       "Microsoft.AspNetCore.Cryptography.Internal/3.1.3": {
@@ -672,6 +687,17 @@
         },
         "compile": {
           "lib/netcoreapp3.1/Microsoft.Extensions.Primitives.dll": {}
+        }
+      },
+      "Newtonsoft.Json/11.0.2": {
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "assemblyVersion": "11.0.0.0",
+            "fileVersion": "11.0.2.21924"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       },
       "SQLitePCLRaw.bundle_e_sqlite3/2.0.2": {
@@ -2450,6 +2476,13 @@
       "serviceable": false,
       "sha512": ""
     },
+    "Iyzipay/2.1.37": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-GFY4GJcNr+gn6Re8ZMSmCD3PGqo9qeqa0KMhpToDvL84wCIog4oKrhUC4lTzdeOs6u9YukxiGlk62O7r8eO9jA==",
+      "path": "iyzipay/2.1.37",
+      "hashPath": "iyzipay.2.1.37.nupkg.sha512"
+    },
     "Microsoft.AspNetCore.Cryptography.Internal/3.1.3": {
       "type": "package",
       "serviceable": true,
@@ -2652,6 +2685,13 @@
       "sha512": "sha512-5gK6qeq9CBCHBfB3Tim3jCJTLafT9FXFBAZZq39rC8adz8mxcjVAuQSw3jGgHqoRk0jwtXKFhXJUVur8vfeuFg==",
       "path": "microsoft.extensions.primitives/3.1.3",
       "hashPath": "microsoft.extensions.primitives.3.1.3.nupkg.sha512"
+    },
+    "Newtonsoft.Json/11.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-IvJe1pj7JHEsP8B8J8DwlMEx8UInrs/x+9oVY+oCD13jpLu4JbJU2WCIsMRn5C4yW9+DgkaO8uiVE5VHKjpmdQ==",
+      "path": "newtonsoft.json/11.0.2",
+      "hashPath": "newtonsoft.json.11.0.2.nupkg.sha512"
     },
     "SQLitePCLRaw.bundle_e_sqlite3/2.0.2": {
       "type": "package",
