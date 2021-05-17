@@ -6,23 +6,28 @@ using Microsoft.EntityFrameworkCore;
 
 namespace E_commerce.dataa.Concrete.EfCore
 {
-    public class EfCoreProductRepository : EfCoreGenericRepository<Product, ShopContext>, IProductRepository
+    public class EfCoreProductRepository : EfCoreGenericRepository<Product>, IProductRepository
     {
+        public EfCoreProductRepository(ShopContext context):base(context)
+        {
+            
+        }
+        private ShopContext ShopContext
+        {
+            get {return context as ShopContext;}
+        }
         public Product GetByIdWithCategories(int id)
         {
-            using(var context =new ShopContext())
-            {
-                    return context.Products.Where(i=>i.ProductId==id)
+            
+                    return ShopContext.Products.Where(i=>i.ProductId==id)
                     .Include(i=>i.ProductCategories).ThenInclude(i=>i.Category).FirstOrDefault();
-
-            }
+    
         }
 
         public int GetCountByCategory(string category)
         {
-            using(var context =new ShopContext())
-            {
-                var products = context.Products.AsQueryable(); 
+            
+                var products = ShopContext.Products.AsQueryable(); 
 
                 if(!string.IsNullOrEmpty(category)) 
                 {
@@ -33,25 +38,23 @@ namespace E_commerce.dataa.Concrete.EfCore
                  return products.Count();
 
 
-            }
+            
         }
 
         public List<Product> GetHomePagesProducts()
         {
-            using(var context =new ShopContext())
-            {
-                return context.Products
+           
+                return ShopContext.Products
                 .Where(i=>i.IsApproved && i.IsHome==true).ToList();
-            }
+            
         }
 
         
 
         public List<Product> GetProductByCategory(string name,int page,int pageSize)
         {
-            using(var context =new ShopContext())
-            {
-                var products = context.Products
+            
+                var products = ShopContext.Products
                 .Where(i=>i.IsApproved)
                 .AsQueryable(); 
 
@@ -64,38 +67,35 @@ namespace E_commerce.dataa.Concrete.EfCore
                  return products.Skip((page-1)*pageSize).Take(pageSize).ToList();
 
 
-            }
+            
         }
 
         public Product GetProductDetails(string url)
         {
-             using(var context =new ShopContext())
-            {
-                return context.Products.Where(i =>i.Url==url).Include(i =>i.ProductCategories)
+             
+                return ShopContext.Products.Where(i =>i.Url==url).Include(i =>i.ProductCategories)
                 .ThenInclude(i =>i.Category)
                 .FirstOrDefault();
-            }
+            
         }
 
         public List<Product> GetSearchResult(string searchString)
         {
-            using(var context =new ShopContext())
-            {
-                var products = context.Products
+            
+                var products = ShopContext.Products
                 .Where(i=>i.IsApproved && i.Name.ToLower().Contains(searchString.ToLower()) || i.Description.ToLower().Contains(searchString.ToLower()))
                 .AsQueryable(); 
 
                  return products.ToList();
 
 
-            }
+            
         }
 
         public void Update(Product entity, int[] categoryIds)
         {
-             using(var context =new ShopContext())
-            {
-                var products = context.Products
+             
+                var products = ShopContext.Products
                 .Include(i=>i.ProductCategories)
                 .FirstOrDefault(i=>i.ProductId==entity.ProductId);
                  
@@ -107,17 +107,16 @@ namespace E_commerce.dataa.Concrete.EfCore
                         products.Url=entity.Url;
                         products.ImageUrl=entity.ImageUrl;
 
-
                         products.ProductCategories=categoryIds.Select(catid=>new ProductCategory()
                         {
                             ProductId =entity.ProductId,
                             CategoryId=catid
                         }).ToList();
-                        context.SaveChanges();
+                  
                  }
 
 
-            }
+            
         }
     }
 }

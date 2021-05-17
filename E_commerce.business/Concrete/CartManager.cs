@@ -6,10 +6,10 @@ namespace E_commerce.business.Concrete
 {
     public class CartManager : ICartService
     {
-        private ICartRepository _cartRepository;
-        public CartManager(ICartRepository cartRepository)
+        private readonly IUnitOfWork _unitofwork;
+        public CartManager(IUnitOfWork unitofwork)
         {
-            _cartRepository=cartRepository;
+            _unitofwork=unitofwork;
         }
 
         public void AddToCart(string userId, int productId, int quantity)
@@ -30,13 +30,14 @@ namespace E_commerce.business.Concrete
                 {
                     cart.CartItems[index].Quantity+=quantity;
                 }
-                _cartRepository.Update(cart);
+                _unitofwork.Carts.Update(cart);
+                _unitofwork.Save();
             }
         }
 
         public void CleartCart(int cartId)
         {
-            _cartRepository.ClearCart(cartId);
+            _unitofwork.Carts.ClearCart(cartId);
         }
 
         public void DeleteFromCart(string userId, int productId)
@@ -44,20 +45,21 @@ namespace E_commerce.business.Concrete
             var cart =GetCartByUserId(userId);
             if(cart!=null)
             {
-                _cartRepository.DeleteFromCart(cart.Id,productId);
+                _unitofwork.Carts.DeleteFromCart(cart.Id,productId);
             }
         }
 
         public Cart GetCartByUserId(string userId)
         {
-            return _cartRepository.GetByUserId(userId);
+            return _unitofwork.Carts.GetByUserId(userId);
         }
 
         public void InitializeCart(string userId)
         {
-           _cartRepository.Create(new Cart(){
+           _unitofwork.Carts.Create(new Cart(){
                UserId=userId
            });
+           _unitofwork.Save();
         }
     }
 }

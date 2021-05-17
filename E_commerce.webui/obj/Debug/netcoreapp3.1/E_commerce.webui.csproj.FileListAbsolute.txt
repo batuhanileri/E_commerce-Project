@@ -166,5 +166,5 @@ C:\Program Files\E_commerce\E_commerce.webui\obj\Debug\netcoreapp3.1\Razor\Views
 C:\Program Files\E_commerce\E_commerce.webui\bin\Debug\netcoreapp3.1\Iyzipay.dll
 C:\Program Files\E_commerce\E_commerce.webui\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
 C:\Program Files\E_commerce\E_commerce.webui\obj\Debug\netcoreapp3.1\Razor\Views\Cart\Success.cshtml.g.cs
-C:\Program Files\E_commerce\E_commerce.webui\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
 C:\Program Files\E_commerce\E_commerce.webui\obj\Debug\netcoreapp3.1\Razor\Views\Cart\Orders.cshtml.g.cs
+C:\Program Files\E_commerce\E_commerce.webui\bin\Debug\netcoreapp3.1\Properties\launchSettings.json

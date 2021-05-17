@@ -14,6 +14,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.FileProviders;
 using Microsoft.Extensions.Hosting;
@@ -22,11 +23,17 @@ namespace E_commerce.webui
 {
     public class Startup
     {
+       private IConfiguration _configuration;
+        public Startup(IConfiguration configuration)
+        {
+            _configuration = configuration;
+        }
         // This method gets called by the runtime. Use this method to add services to the container.
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<ApplicationContext>(options=> options.UseSqlite("Data Source=shopDb"));
+            services.AddDbContext<ApplicationContext>(options=> options.UseSqlite(_configuration.GetConnectionString("SqliteConnection")));
+            services.AddDbContext<ShopContext>(options=> options.UseSqlite(_configuration.GetConnectionString("SqliteConnection")));
             services.AddIdentity<User,IdentityRole>().AddEntityFrameworkStores<ApplicationContext>().AddDefaultTokenProviders();
            
             services.Configure<IdentityOptions>(options=>
@@ -64,11 +71,11 @@ namespace E_commerce.webui
                         };
              });
             //mvc
-            services.AddScoped<IProductRepository,EfCoreProductRepository>();
-            services.AddScoped<ICategoryRepository,EfCoreCategoryRepository>();
-            services.AddScoped<ICartRepository,EfCoreCartRepository>();
-            services.AddScoped<IOrderRepository,EfCoreOrderRepository>();
-
+            // services.AddScoped<IProductRepository,EfCoreProductRepository>();
+            // services.AddScoped<ICategoryRepository,EfCoreCategoryRepository>();
+            // services.AddScoped<ICartRepository,EfCoreCartRepository>();
+            // services.AddScoped<IOrderRepository,EfCoreOrderRepository>();
+            services.AddScoped<IUnitOfWork,UnitOfWork>();
 
             services.AddScoped<IProductService,ProductManager>();
             services.AddScoped<ICategoryService,CategoryManager>();
@@ -78,7 +85,7 @@ namespace E_commerce.webui
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env,IConfiguration configuration,UserManager<User> userManager,RoleManager<IdentityRole> roleManager,ICartService cartService)
         {
             app.UseStaticFiles();
             app.UseStaticFiles(new StaticFileOptions{
@@ -91,7 +98,7 @@ namespace E_commerce.webui
             
             if (env.IsDevelopment())
             {
-                SeedDatabase.Seed();
+                
                 app.UseDeveloperExceptionPage();
             }
             app.UseAuthentication();
@@ -204,6 +211,9 @@ namespace E_commerce.webui
 
                 );
             });
+       
+            SeedIdentity.Seed(userManager,roleManager,configuration,cartService).Wait();
+       
         }
     }
 }

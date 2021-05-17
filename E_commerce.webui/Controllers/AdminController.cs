@@ -14,7 +14,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace E_commerce.webui.Controllers
 {
-    [Authorize(Roles="Admin")]
+    [Authorize(Roles="admin")]
     public class AdminController : Controller
       { 
               private IProductService _productService;
@@ -207,10 +207,9 @@ namespace E_commerce.webui.Controllers
                      Name=model.Name,
                      Url=model.Url,
                      Price=model.Price,
-                     Description=model.Description,
-                     ImageUrl=model.ImageUrl
-
+                     Description=model.Description      
                   };
+                  
                   _productService.Create(entity);
                   return RedirectToAction("ProductList");
                   } 

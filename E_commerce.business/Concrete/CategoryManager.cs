@@ -7,45 +7,48 @@ namespace E_commerce.business.Concrete
 {
     public class CategoryManager : ICategoryService
     {
-        private ICategoryRepository _categoryRepository;
-        
-        public CategoryManager(ICategoryRepository categoryRepository)
+        private readonly IUnitOfWork _unitofwork;
+        public CategoryManager(IUnitOfWork unitofwork)
         {
-           _categoryRepository = categoryRepository;
+            _unitofwork=unitofwork;
         }
         public void Create(Category entity)
         {
-            _categoryRepository.Create(entity);
+            _unitofwork.Categories.Create(entity);
+            _unitofwork.Save();
         }
 
         public void Delete(Category entity)
         {
-            _categoryRepository.Delete(entity);
+            _unitofwork.Categories.Delete(entity);
+           _unitofwork.Save();
+
         }
 
         public void DeleteFromCategory(int productId, int categoryId)
         {
-           _categoryRepository.DeleteFromCategory(productId,categoryId);
+           _unitofwork.Categories.DeleteFromCategory(productId,categoryId);
         }
 
         public List<Category> GetAll()
         {
-            return _categoryRepository.GetAll();
+            return _unitofwork.Categories.GetAll();
         }
 
         public Category GetById(int id)
         {
-            return _categoryRepository.GetById(id);
+            return _unitofwork.Categories.GetById(id);
         }
 
         public Category GetByIdWithProducts(int categoryId)
         {
-            return _categoryRepository.GetByIdWithProducts(categoryId);
+            return _unitofwork.Categories.GetByIdWithProducts(categoryId);
         }
 
         public void Update(Category entity)
         {
-           _categoryRepository.Update(entity);
+           _unitofwork.Categories.Update(entity);
+           _unitofwork.Save();
         }
     }
 }

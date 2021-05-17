@@ -61,7 +61,9 @@ namespace E_commerce.dataa.Migrations
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("Name")
-                        .HasColumnType("TEXT");
+                        .IsRequired()
+                        .HasColumnType("TEXT")
+                        .HasMaxLength(100);
 
                     b.Property<string>("Url")
                         .HasColumnType("TEXT");
@@ -69,6 +71,26 @@ namespace E_commerce.dataa.Migrations
                     b.HasKey("CategoryId");
 
                     b.ToTable("Categories");
+
+                    b.HasData(
+                        new
+                        {
+                            CategoryId = 1,
+                            Name = "Pantalon",
+                            Url = "telefon"
+                        },
+                        new
+                        {
+                            CategoryId = 2,
+                            Name = "Gömlek",
+                            Url = "gomlek"
+                        },
+                        new
+                        {
+                            CategoryId = 3,
+                            Name = "Elbise",
+                            Url = "elbise"
+                        });
                 });
 
             modelBuilder.Entity("E_commerce.entity.Order", b =>
@@ -170,7 +192,9 @@ namespace E_commerce.dataa.Migrations
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("Name")
-                        .HasColumnType("TEXT");
+                        .IsRequired()
+                        .HasColumnType("TEXT")
+                        .HasMaxLength(100);
 
                     b.Property<double?>("Price")
                         .HasColumnType("REAL");
@@ -181,6 +205,96 @@ namespace E_commerce.dataa.Migrations
                     b.HasKey("ProductId");
 
                     b.ToTable("Products");
+
+                    b.HasData(
+                        new
+                        {
+                            ProductId = 1,
+                            Description = "%100 Pamuk",
+                            ImageUrl = "1.jpg",
+                            IsApproved = true,
+                            IsHome = false,
+                            Name = "Mavi Pantalon",
+                            Price = 140.0,
+                            Url = "mavi-pantalon"
+                        },
+                        new
+                        {
+                            ProductId = 2,
+                            Description = "%100 Pamuk",
+                            ImageUrl = "4.jpg",
+                            IsApproved = true,
+                            IsHome = false,
+                            Name = "Yeşil Pantalon",
+                            Price = 150.0,
+                            Url = "yesil-pantalon"
+                        },
+                        new
+                        {
+                            ProductId = 3,
+                            Description = "%100 Pamuk",
+                            ImageUrl = "5.jpg",
+                            IsApproved = true,
+                            IsHome = false,
+                            Name = "Kırmızı Pantalon",
+                            Price = 160.0,
+                            Url = "kirmizi-pantalon"
+                        },
+                        new
+                        {
+                            ProductId = 4,
+                            Description = "%100 Pamuk",
+                            ImageUrl = "6.jpg",
+                            IsApproved = true,
+                            IsHome = false,
+                            Name = "Siyah Pantalon",
+                            Price = 170.0,
+                            Url = "siyah-pantalon"
+                        },
+                        new
+                        {
+                            ProductId = 5,
+                            Description = "%100 Pamuk",
+                            ImageUrl = "7.jpg",
+                            IsApproved = true,
+                            IsHome = false,
+                            Name = "Beyaz Pantalon",
+                            Price = 180.0,
+                            Url = "beyaz-pantalon"
+                        },
+                        new
+                        {
+                            ProductId = 6,
+                            Description = "%100 Pamuk",
+                            ImageUrl = "8.jpg",
+                            IsApproved = true,
+                            IsHome = false,
+                            Name = "Siyah Gömlek",
+                            Price = 200.0,
+                            Url = "siyah-gomlek"
+                        },
+                        new
+                        {
+                            ProductId = 7,
+                            Description = "%100 Pamuk",
+                            ImageUrl = "9.jpg",
+                            IsApproved = true,
+                            IsHome = false,
+                            Name = "Beyaz Gömlek",
+                            Price = 50.0,
+                            Url = "beyaz-gomlek"
+                        },
+                        new
+                        {
+                            ProductId = 8,
+                            Description = "%100 Pamuk",
+                            ImageUrl = "10.jpg",
+                            IsApproved = true,
+                            IsHome = false,
+                            Name = "Yesil Gömlek",
+                            Price = 10.0,
+                            Url = "yesil-gomlek"
+                        });
                 });
 
             modelBuilder.Entity("E_commerce.entity.ProductCategory", b =>
@@ -196,6 +310,43 @@ namespace E_commerce.dataa.Migrations
                     b.HasIndex("ProductId");
 
                     b.ToTable("ProductCategory");
+
+                    b.HasData(
+                        new
+                        {
+                            CategoryId = 1,
+                            ProductId = 1
+                        },
+                        new
+                        {
+                            CategoryId = 1,
+                            ProductId = 2
+                        },
+                        new
+                        {
+                            CategoryId = 1,
+                            ProductId = 3
+                        },
+                        new
+                        {
+                            CategoryId = 1,
+                            ProductId = 4
+                        },
+                        new
+                        {
+                            CategoryId = 1,
+                            ProductId = 5
+                        },
+                        new
+                        {
+                            CategoryId = 2,
+                            ProductId = 6
+                        },
+                        new
+                        {
+                            CategoryId = 2,
+                            ProductId = 7
+                        });
                 });
 
             modelBuilder.Entity("E_commerce.entity.CartItem", b =>
