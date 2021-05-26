@@ -213,7 +213,7 @@ namespace E_commerce.webui.Controllers
             paymentCard.RegisterCard = 0;
             request.PaymentCard = paymentCard;
 
-            //  paymentCard.CardNumber = "5528790000000008";
+            // paymentCard.CardNumber = "5528790000000008";
             // paymentCard.ExpireMonth = "12";
             // paymentCard.ExpireYear = "2030";
             // paymentCard.Cvc = "123";

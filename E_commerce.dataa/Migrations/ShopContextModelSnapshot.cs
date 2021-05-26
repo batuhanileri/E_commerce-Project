@@ -77,7 +77,7 @@ namespace E_commerce.dataa.Migrations
                         {
                             CategoryId = 1,
                             Name = "Pantalon",
-                            Url = "telefon"
+                            Url = "pantalon"
                         },
                         new
                         {

@@ -11,6 +11,8 @@
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
     <PackageReference Include="Microsoft.EntityFrameworkcore.Sqlite" Version="3.1.3"/>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.3"/> 
+
     <PackageReference Include="Iyzipay" Version="2.1.37"/>
   </ItemGroup>
   <PropertyGroup>

@@ -14,16 +14,13 @@ namespace E_commerce.dataa.Concrete.EfCore
         }
         public void Create(TEntity entity)
         {
-            
-                context.Set<TEntity>().Add(entity);
-               
-            
+            context.Set<TEntity>().Add(entity);                      
         }
 
         public void Delete(TEntity entity)
         {
             
-                context.Set<TEntity>().Remove(entity);
+            context.Set<TEntity>().Remove(entity);
             
         }
 
